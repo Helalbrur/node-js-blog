@@ -1,0 +1,10 @@
+<% layout('layouts/main') %>
+
+<h1><%= post.title %></h1>
+<hr>
+<p><%= post.body %></p>
+<a href="/posts/<%= post.id %>/edit" class="btn btn-primary">Edit Post</a>
+<form method="POST" action="/posts/<%= post.id %>?_method=DELETE" style="display: inline-block;">
+    <button type="submit" class="btn btn-danger">Delete Post</button>
+</form>
+<a href="/posts" class="btn btn-secondary">Back to All Posts</a>

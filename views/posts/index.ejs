@@ -1,0 +1,14 @@
+<% layout('layouts/main') %>
+
+<h1>All Posts</h1>
+<hr>
+<% if(posts.length > 0) { %>
+    <% posts.forEach(function(post) { %>
+        <h2><a href="/posts/<%= post.id %>"><%= post.title %></a></h2>
+        <p><%= post.body %></p>
+        <hr>
+    <% }); %>
+<% } else { %>
+    <p>No posts found</p>
+<% } %>
+<a href="/posts/create" class="btn btn-primary">Create Post</a>

@@ -1,0 +1,44 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "a blog application with user authentication, permission, and CRUD functionality using Express and Sequelize in an MVC pattern.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Helalbrur/node-js-blog.git"
+  },
+  "keywords": [
+    "node.js",
+    "express.js",
+    "mvc",
+    "route",
+    "and",
+    "user",
+    "basis",
+    "permission"
+  ],
+  "author": "Helal Uddin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Helalbrur/node-js-blog/issues"
+  },
+  "homepage": "https://github.com/Helalbrur/node-js-blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "connect-flash": "^0.1.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.15.0",
+    "jsonwebtoken": "^9.0.0",
+    "mariadb": "^3.1.0",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.1.2",
+    "sequelize": "^6.29.0"
+  }
+}
